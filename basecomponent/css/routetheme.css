@@ -1,0 +1,55 @@
+.vetech-route-theme{
+	font-size: 12px;
+    z-index: 5000;
+}
+
+.vetech-route-theme a{
+	color: #1e90ff;
+}
+
+.vetech-route-theme.vrt-layer{
+	border: 1px solid #ccc;
+    box-shadow: 2px 1px 5px rgba(0,0,0,.5);
+    position: absolute;
+    background: #fff;
+    visibility: hidden;
+    padding: 0 5px 5px 5px;
+}
+
+.vetech-route-theme .vetech-clearfix{
+	border-bottom: 1px dashed orange;
+    clear: both;
+    padding: 5px 0;
+}
+.vetech-route-theme .vetech-clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+}
+.vetech-route-theme .vetech-inline{
+	float: left;
+	position: relative;
+}
+    
+.vetech-route-theme .vetech-clearfix dt{
+	text-align: left;
+	line-height: 24px;
+	font-weight: bold;
+}
+.vetech-route-theme ul li{
+	float: left;
+}
+.vetech-route-theme ul li label{
+	max-width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+	line-height: 24px;
+
+}
+.vetech-route-theme ul li input{
+	float: left;
+	margin-top: 5px;
+}

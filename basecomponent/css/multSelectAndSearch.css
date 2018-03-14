@@ -1,0 +1,88 @@
+.multSelectAndSearch{
+    border: 1px solid #ccc;
+    width:400px;
+    height:300px;
+    overflow: hidden;
+    font-size: 12px;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    background: #fff;
+}
+
+.multSelectAndSearch .searchContent, .multSelectAndSearch .toolbarContent{
+    height:35px;
+    text-align: center;
+    line-height: 35px;
+}
+.multSelectAndSearch  .content{
+    height:220px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    padding:5px 0;
+}
+
+.multSelectAndSearch .leftContent,.multSelectAndSearch .centerContent,.multSelectAndSearch .rightContent{
+    width:35%;
+    float: left;
+    position: relative;
+    height:100%;
+    margin-left:2%;
+}
+.multSelectAndSearch .centerContent{
+    width:20%;
+    text-align: center;
+}
+.multSelectAndSearch .centerContent input{
+    width:70px;
+    margin:10px 0;
+}
+.multSelectAndSearch .centerContent input:first-child{
+    margin-top:30px;
+}
+.multSelectAndSearch select{
+    height:200px;
+    width:100%;
+    outline: none;
+}
+.multSelectAndSearch p{
+    margin:0;
+    padding:0;
+    height:20px;
+    line-height: 20px;
+    text-indent: 10px;
+}
+
+.multSelectAndSearch  .toolbarContent input{
+    border: none;
+    color:#fff;
+    padding:5px 10px;
+    margin:0 5px;
+    outline: none;
+}
+
+.multSelectAndSearch .sureBtn{
+    background: #009688;
+}
+.multSelectAndSearch .closeBtn{
+    background: #FF5722;
+}
+
+.multSelectAndSearch  .centerContent input{
+    border: none;
+    color:#fff;
+    padding:3px 5px;
+    background:#1E9FFF;
+    line-height:17px;
+    outline: none;
+    cursor: pointer;
+}
+.multSelectAndSearch .searchTxt{
+    height:25px;
+    line-height:25px;
+    width:50%;
+    background-color: #fff;
+    border:1px solid  #e6e6e6;
+    outline: none;
+    padding-left:10px;
+}

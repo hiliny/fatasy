@@ -1,0 +1,50 @@
+.mult-select{
+    padding:0;
+    margin:0;
+    border: 1px solid #ccc;
+    font-size:12px;
+    font-family: Arial;
+    position: absolute;
+    background: #fff;
+    z-index: 10000;
+    overflow-y: auto;
+    overflow-x: hidden;
+    visibility: hidden;
+    left:-1000px;
+    top:-10000px;
+}
+
+.mult-select label{
+    display: block;
+    height:20px;
+    margin:0;
+    padding:0;
+    line-height:20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-indent: 5px;
+    width:100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mult-select label:hover{
+    color:#fff;
+    background:#0099FF;
+}
+
+.mult-select label.checkbox{
+    text-indent: 20px;
+}
+.mult-select label  input{
+    position: absolute;
+    margin:0;
+    padding:0;
+    left:3px;
+    top:4px;
+    *left:0;
+    *top:0;
+    border:none;
+    outline:none;
+}

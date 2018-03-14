@@ -1,0 +1,52 @@
+<div class="vetech-mdd-container">
+    <div class="search-container">
+        <div>
+            <em class="em-none" style="position: absolute;top: 6px;left: 10px;line-height: 25px;font-style: normal;color: #666666;">多选，支持中文/简拼输入</em>
+            <input type="text" class="searchTxt" />
+        </div>
+        <a href="javascript:void(0);" class="sureBtn">确认</a>
+    </div>
+    <div class="tab-container">
+        <ul class="header">
+            <li class="active" data-index="0">热门</li>
+            {{# for(var i = 0, len = d.simpleData.length; i < len; i++){ }}
+            	 <li data-index="{{i}}">{{d.simpleData[i].areaName}}</li>
+            {{# } }}
+        </ul>
+        <div class="content">
+            <div data-index="0" class="active">
+                <dl class="clearfix">
+                    <dt class="notitle"></dt>
+                    <dd class="notitle">
+                        <ul>
+                        	{{# for(var j = 0 , len2 = d.hotSimpleData.childs.length; j < len2; j++ ){ }}
+                        		<li data-id="{{d.hotSimpleData.childs[j].id}}"  data-data='{"id":"{{d.hotSimpleData.childs[j].id}}","name":"{{d.hotSimpleData.childs[j].name}}","jp":"{{d.hotSimpleData.childs[j].jp}}"}'>
+                                    <a href="javascript:;" title="{{d.hotSimpleData.childs[j].name}}">{{d.hotSimpleData.childs[j].name}}</a>
+                                </li>
+                        	{{# } }}
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            {{# for(var m= 0, len = d.simpleData.length; m < len; m++){ }}
+                <div data-index="{{m}}">
+                	{{# for(var n = 0, len = d.simpleData[m].childs.length; n < len; n++){ }}
+                        <dl class="clearfix">
+                            <dt>{{d.simpleData[m].childs[n].proName}}</dt>
+                            <dd>
+                                <ul>
+                                    {{# for(var k = 0, len3 = d.simpleData[m].childs[n].cityChilds.length; k < len3; k++){ }}
+                                        <li data-id="{{d.simpleData[m].childs[n].cityChilds[k].id}}"  data-data='{"id":"{{d.simpleData[m].childs[n].cityChilds[k].id}}","name":"{{d.simpleData[m].childs[n].cityChilds[k].name}}","jp":"{{d.simpleData[m].childs[n].cityChilds[k].jp}}"}'>
+                                            <a href="javascript:;" title="{{d.simpleData[m].childs[n].cityChilds[k].name}}">{{d.simpleData[m].childs[n].cityChilds[k].name}}</a>
+                                        </li>
+                                    {{# } }}
+                                </ul>
+                            </dd>
+                        </dl>
+                    {{# } }}
+                </div>
+             {{# } }}
+        </div>
+    </div>
+    <ul class="list-container"></ul>
+</div>

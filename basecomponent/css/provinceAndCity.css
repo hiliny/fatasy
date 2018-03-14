@@ -1,0 +1,167 @@
+.vetech-provinceAndCity-container{
+	width:500px;
+	min-height:100px;
+	border: 1px solid #ccc;
+	background: #fff;
+	z-index: 10000;
+	position: absolute;
+	font-size: 12px;
+	color:#336699;
+	visibility: hidden;
+	left:-1000px;
+	top:-1000px;
+}
+
+.vetech-provinceAndCity-container .toolbar{
+	height:25px;
+	line-height: 25px;
+	padding-left:5px;
+	margin-top:5px;
+}
+
+.vetech-provinceAndCity-container .toolbar strong{
+	font-size: 13px;
+}
+.vetech-provinceAndCity-container .toolbar input{
+	width:60px;
+	height: 25px;
+	line-height: 22px;
+	text-align: center;
+	background: #FF9900;
+	color:#fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding:0;
+	margin-left:10px;
+}
+
+.vetech-provinceAndCity-container .checkedArea{
+	line-height: 14px;
+	padding-left: 10px;
+	margin-top:10px;
+	border-bottom: 2px solid #ccc;
+}
+
+.vetech-provinceAndCity-container .checkedArea .checkedItem{
+	float: left;
+	margin-right:5px;
+	margin-bottom: 5px;
+	background: #5AA5F0;
+	color: #fff;
+	max-width:60px;
+	padding:2px 20px 2px 3px;
+	position: relative;
+	
+}
+
+.vetech-provinceAndCity-container .checkedArea .checkedItem i{
+	position: absolute;
+	right:2px;
+	width:12px;
+	height:12px;
+	top:3px;
+	background: url('data:image/gif;base64,R0lGODlhCwALAIABAP///////yH5BAEAAAEALAAAAAALAAsAAAIVBIIZtqeMYFNTPksdjZjPm0gY0zUFADs=') no-repeat center;
+	cursor: pointer;
+}
+
+.vetech-provinceAndCity-container .content{
+	margin-left:15px;
+}
+
+.vetech-provinceAndCity-container .content .item{
+	float: left;
+	width:15%;
+	height:20px;
+	line-height: 20px;
+	text-indent: 20px;	
+	border: 2px solid #fff;
+	margin: 2px 0;
+	position: relative;
+	background:#fff;
+	cursor: pointer;
+}
+.vetech-provinceAndCity-container .content .item i{
+	position: absolute;
+	left:2px;
+	top:2px;
+	width:16px;
+	height:16px;
+	cursor: pointer;
+}
+.vetech-provinceAndCity-container .content .item .collapse{
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAB90RVh0U29mdHdhcmUATWFjcm9tZWRpYSBGaXJld29ya3MgOLVo0ngAAABRSURBVCiRY/z/////jtM/GIgBFaYcDIztp77/J0o1FDDhMqnClIN4DSTbgA+wIDsDHSCLwQKGfBuQgxZmMrbgpqOnkQG+mGfCFUHYQIUpBwMAWY0Yf2V6qHwAAAAASUVORK5CYII=') no-repeat center;
+}
+.vetech-provinceAndCity-container .content .item .expand{
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRFh8r3////8/r/T56abAAAABtJREFUeNpiYGKAAyQmSYARCjA5pANk5wAEGAAH7AAZxYuNLAAAAABJRU5ErkJggg==') no-repeat center;
+}
+
+.vetech-provinceAndCity-container .content .item .detail{
+	position: absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom: 0;
+	background:#F3FAFF;
+	border:2px solid #BFDCF9;
+	border-bottom: none;
+	display: none;
+	color:#336699;
+}
+
+.vetech-provinceAndCity-container .content .item .detail label{
+	position: absolute;
+	left:15px;
+	right:0;
+	bottom:0;
+	top:0;
+	line-height: 18px;
+	text-indent: 20px;
+}
+.vetech-provinceAndCity-container .content .item  label input{
+	margin:0;
+	padding:0;
+	position: absolute;
+	width:13px;
+	height:13px;
+	left:5px;
+	top:4px;
+	outline: none;
+}
+
+.vetech-provinceAndCity-container .content .item .cityPanel{
+	position: absolute;
+	top:20px;
+	left:0;
+	width:300px;
+	min-height:10px;
+	border: 2px solid #BFDCF9;
+	border-top: none;
+	background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAACCAYAAAB2ZoowAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAJElEQVR42u3QMQEAAAQAMP1LKaKIiwzcO1ZgkdUDAFchAYCPBQ6FLAY21NhKAAAAAElFTkSuQmCC') no-repeat #F3FAFF;
+	background-position: 69px 0;
+	z-index: 10000;
+	color:#336699;
+}
+.vetech-provinceAndCity-container .content .item .cityPanel label{
+	float: left;
+	width:75px;
+	height:18px;
+	text-indent: 20px;
+	position: relative;
+	margin:2px 0;
+	cursor: pointer;
+}
+.vetech-provinceAndCity-container .content .item .cityPanel label:hover{
+	background: #94bce4;
+}
+
+.ellipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	display: block;
+}
+
+
+
+

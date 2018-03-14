@@ -1,0 +1,25 @@
+.vetech-call-center{position: absolute;top:100px;right: -20px; z-index:999;}
+.cc-header{ float: right; width: 40px;height: 40px;background: url(img/callcenter/service.png);opacity: 0.3;cursor: pointer;}
+.cc-header.active{width: 70px;height: 64px;background: url(img/callcenter/gif-3.gif);}
+.cc-header:hover{opacity: 1;}
+
+.cc-content {padding-top: 45px;}
+.cc-content .cc-tel-head{white-space: nowrap; overflow:hidden;background: #fff; border-radius:20px;height: 18px;border: 1px solid #d9d9d9;width: 0;padding: 10px 5px 10px 15px;position: absolute;right: 0;top: 0;display: none;}
+.cc-content .cc-tel-head .cc-tel-default{width: 6px;height: 6px;border-radius: 50%;background: #d30706;}
+.cc-content .cc-tel-head .cc-tel-default.active{background: #19a195;}
+.cc-content .cc-tel-head input{border:0;width: 110px;line-height: 18px;font-size: 13px;padding-left: 5px;background: #fff;}
+.cc-content .cc-tel-head .cc-close{margin-bottom: 1px;width: 18px;height: 18px;background: url(img/callcenter/close.png)no-repeat center center;}
+.cc-content .cc-tel-con{border-radius: 20px;padding: 5px 10px;background: #fafafa;border:1px solid #d9d9d9;overflow: hidden;display: none;}
+.cc-content .ctc-title{border-bottom: 1px dashed #ddd;padding-bottom: 5px;margin:0 10px;padding: 5px 0;}
+.cc-content .ctc-title li{width: 50%; float: left;line-height: 24px;color: #333;}
+.cc-content .ctc-title li span{font-size: 14px;}
+.cc-content .ctc-title li a{font-size: 14px;color: #19a195;}
+.cc-content .ctc-sort li{width: 33.333%; float: left;margin-top: 6px;text-align: center;cursor: pointer;}
+.cc-content .ctc-sort li p{line-height: 20px;}
+.cc-content .ctc-sort li .icon{width: 30px;height: 30px;line-height:30px;text-align:center;font-size: 18px;border-radius: 50%;display: block;margin:0 auto;background:#b1b1b1;color: #fff;}
+.cc-content .ctc-sort li:hover .icon{background: #19a195;}
+.cc-content .ctc-sort li.disabled{cursor: default;}
+.cc-content .ctc-sort li.disabled .icon{background: #dcdcdc;}
+.cc-content .cc-select {border:1px solid #ddd;background: #fff;height: 24px;line-height: 24px;border-radius:3px;margin: 6px 10px; }
+.cc-content .cc-select select{line-height: 24px;border:0;background: transparent;width: 100%;height: 24px;}
+.cc-content .cc-select select option{line-height: 20px;}

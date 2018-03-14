@@ -1,0 +1,149 @@
+<div class="vetech-vetab-container">
+    <div class="title">支持中文/拼音/简拼/三字码输入</div>
+    <div class="header">
+        <ul class="tab">
+        	{{# if(d.hotCityMap.gnHotCityList){ }}
+           		<li tab-index="0">热门</li>
+            {{ # } }}
+            <li tab-index="1">周边</li>
+            <li tab-index="2">省内</li>
+            {{# if(d.gncxCityList){ }}
+                <li tab-index="3">国内长线</li>
+            {{ # } }}
+            <li tab-index="4">港澳台</li>
+            <li tab-index="5">出境</li>
+        </ul>
+        <span class="close"><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnElEQVQ4T6WTwQ2FMAxDzWSwCZ8NMopHgE0Y7StSgdDGPdBeqqLk1TjuhME1DfbjBpjZD8BMcutBzWwHcJL0/QXwDyuAXUFKs9ccJP3CB+CHUNBAsuYGoCCqOQXUkOKHy71lR4/kFMKtXp82SwWVCj9KY1MF8Z+LXDmdBpAZ1pvOC9BzW0FiEq8gScMySB3l5UqYirOM8tdHNfwa/yXyZBGng+hpAAAAAElFTkSuQmCC"></span>
+    </div>
+    <div class="content">
+        <%--热门--%>
+        {{# if(d.hotCityMap.gnHotCityList){ }}
+        <!--<c:if test="${not empty hotCityMap.gnHotCityList}">-->
+            <div class="tab-page" page-index="0">
+                <ul class="clearfix" data-index="0">
+                	{{# for(var i = 0, len = d.hotCityMap.gnHotCityList.length; i < len; i++){ }}
+                    <!--<c:forEach var="city" items="{{d.hotCityMap.gnHotCityList}}">-->
+                        <li style="width:16.66%" data-id="{{d.hotCityMap.gnHotCityList[i].id}}" data-data='{"id":"{{d.hotCityMap.gnHotCityList[i].id}}","name":"{{d.hotCityMap.gnHotCityList[i].name}}"}'>
+                            <a href="javascript:void(0);" title="{{d.hotCityMap.gnHotCityList[i].name}}">{{d.hotCityMap.gnHotCityList[i].name}}</a>
+                        </li>
+                    <!--</c:forEach>-->
+                    {{# }}}
+                </ul>
+            </div>
+        <!--</c:if>-->
+        {{# } }}
+        <%--周边城市数据--%>
+        <div class="tab-page" page-index="1">
+            <ul class="clearfix" data-index="1">
+            	{{# for(var j = 0, len = d.areaList.length; j < len; j++){ }}
+                <!--<c:forEach var="city" items="{{d.areaList}}">-->
+                    <li style="width:16.66%" data-id="{{d.areaList[j].id}}" data-data='{"id":"{{d.areaList[j].id}}","name":"{{d.areaList[j].name}}"}'>
+                        <a href="javascript:void(0);" title="{{d.areaList[j].name}}">{{d.areaList[i].name}}</a>
+                    </li>
+                <!--</c:forEach>-->
+                {{# }}}
+            </ul>
+        </div>
+        <%--省内城市数据--%>
+        <div class="tab-page" page-index="2">
+            <ul class="clearfix" data-index="2">
+            	{{# for(var m = 0, len = d.provinceList.length; i < len; m++){ }}
+                <!--<c:forEach var="city" items="{{d.provinceList}}">-->
+                    <li style="width:16.66%" data-id="{{d.provinceList[m].id}}" data-data='{"id":"{{d.provinceList[m].id}}","name":"{{d.provinceList[m].name}}"}'>
+                        <a href="javascript:void(0);" title="{{d.provinceList[m].name}}">{{d.provinceList[m].name}}</a>
+                    </li>
+                <!--</c:forEach>-->
+                {{# }}}
+            </ul>
+        </div>
+        <%--国内长线--%>
+        {{# if(d.gncxCityList){ }}
+        <!--<c:if test="${not empty gncxCityList}">-->
+            <div class="tab-page" page-index="3">
+            	{{# for(var n = 0, len = d.gncxCityList.length; n < len; n++){ }}
+                <!--<c:forEach var="gncx" items="{{d.gncxCityList}}" varStatus="vs">-->
+                	{{# if(d.gncxCityList[n].index % 2 ==0){ }}
+                    <!--<c:if test="${vs.index%2==0}">-->
+                        <div class="clearfix">
+                    <!--</c:if>-->
+                    {{# } }}
+                    <dl style="float:left;width:50%">
+                        <dt>{{d.gncxCityList[n].gname}}</dt>
+                        <dd style="width:234px;">
+                            <ul class="clearfix" data-index="5">
+                                <c:forEach var="city" items="{{d.gncxCityList[n].gdata}}">
+                                    <li style="width:33.33%" data-id="${city.id}"  data-data='{"id":"{{d.gncxCityList[n].id}}","name":"{{d.gncxCityList[n].name}}"}'>
+                                        <a href="javascript:void(0);" title="{{d.gncxCityList[n].name}}">{{d.gncxCityList[n].name}}</a>
+                                    </li>
+                                </c:forEach>
+                            </ul>
+                        </dd>
+                    </dl>
+                    {{# if(d.gncxCityList[n].index % 2 ==0){ }}
+                    <!--<c:if test="${vs.index%2!=0}">-->
+                        </div>
+                    <!--</c:if>-->
+                    {{# } }}
+                <!--</c:forEach>-->
+                {{# } }}
+            </div>
+        <!--</c:if>-->
+        {{# } }}
+        <%--港澳台--%>
+        <div class="tab-page" page-index="4">
+            <ul class="clearfix" data-index="4">
+            	{{# for(var x = 0, len = d.gncxCityList.length; x < len; x++){ }}
+                <!--<c:forEach var="city" items="${gatCityList}">-->
+                    <li style="width:16.66%" data-id="{{d.gncxCityList[x].id}}" data-data='{"id":"{{d.gncxCityList[x].id}}","name":"{{d.gncxCityList[x].name}}"}'>
+                        <a href="javascript:void(0);" title="{{d.gncxCityList[x].name}}">{{d.gncxCityList[x].name}}</a>
+                    </li>
+                <!--</c:forEach>-->
+                {{# } }}
+            </ul>
+        </div>
+        <%--出境--%>
+        <div class="tab-page" page-index="5">
+        	{{# if(d.hotCityMap.gnHotCityList){ }}
+            <!--<c:if test="${not empty hotCityMap.gnHotCityList}">-->
+                <div class="clearfix">
+                    <dl style="float:left;width:100%">
+                        <dt data-id="">热门</dt>
+                        <dd style="width:484px;">
+                            <ul class="clearfix" data-index="5">
+                                <!--<c:forEach var="city" items="${hotCityMap.gjHotCityList}">-->
+                                {{# for(var y = 0, len = d.hotCityMap.gjHotCityList.length; y < len; y++){ }}
+                                    <li style="width:16.66%" data-id="{{d.hotCityMap.gjHotCityList[y].id}}" data-data='{"id":"{{d.hotCityMap.gjHotCityList[y].id}}","name":"{{d.hotCityMap.gjHotCityList[y].name}}"}'>
+                                        <a href="javascript:void(0);" title="${city.name}">{{d.hotCityMap.gjHotCityList[y].name}}</a>
+                                    </li>
+                                {{# } }}
+                                <!--</c:forEach>-->
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            {{# } }}
+            <!--</c:if>-->
+            {{# for(var b = 0, len = d.cjGroupList.length; b < len; b++){ }}
+            <!--<c:forEach var="subone" items="${cjGroupList}">-->
+                <div class="clearfix">
+                    <dl style="float:left;width:100%">
+                        <dt>{{d.cjGroupList[b].gname}}</dt>
+                        <dd style="width:484px;">
+                            <ul class="clearfix" data-index="5">
+                            	{{# for(var a = 0, len = d.cjGroupList[b].gdata.length; a < len; a++){ }}
+                                <!--<c:forEach var="city" items="${d.cjGroupList[b].gdata}">-->
+                                    <li style="width:16.66%" data-id="{{d.cjGroupList[b].gdata[a].id}}"  data-data='{"id":"{{d.cjGroupList[b].gdata[a].id}}","name":"{{d.cjGroupList[b].gdata[a].name}}"}'>
+                                        <a href="javascript:void(0);" title="{{d.cjGroupList[b].gdata[a].name}}">{{d.cjGroupList[b].gdata[a].name}}</a>
+                                    </li>
+                                <!--</c:forEach>-->
+                                {{# } }}
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            <!--</c:forEach>-->
+            {{# } }}
+        </div>
+    </div>
+</div>

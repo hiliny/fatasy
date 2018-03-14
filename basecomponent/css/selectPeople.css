@@ -1,0 +1,21 @@
+.vetech-xzperson-container {max-width: 420px;visibility: hidden; position: absolute;left: -999px;box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);top:0; border:1px solid #ddd;display: inline-block;background: #fff;font-size: 12px }
+.vetech-xzperson-container ul{list-style: none;padding: 0;margin: 0;}
+.vetech-xzperson-container ul li{width: 150px;line-height: 26px;color: #666;border-bottom: 1px solid #ddd;padding: 0 10px;cursor: pointer}
+.vetech-xzperson-container ul li:hover{background: #09F;color: #fff}
+.vetech-xzperson-container .xzperson-more{line-height: 26px;padding:0 10px;display:inline-block;color:#666;text-decoration: none}
+.vetech-xzperson-container .xzperson-more:hover{color:#09F;text-decoration: none}
+
+.vetech-xzperson-container .sortbox{display: none;padding-top: 10px}
+.vetech-xzperson-container .group-foot{background: #f6f6f6;padding:5px 0;}
+.vetech-xzperson-container .foot-btn button{display: inline-block;width: 50px;cursor: pointer;line-height: 24px;text-align: center;background: #09F;color: #fff;border: 1px solid #09F;text-decoration: none;margin-right: 5px;outline: 0}
+.vetech-xzperson-container .foot-btn button:hover{background: #168fe1;}
+.vetech-xzperson-container .foot-btn .btn-cancle{background:#999;border: 1px solid #999;}
+.vetech-xzperson-container .foot-btn .btn-cancle:hover{background: #777;border: 1px solid #777}
+.vetech-xzperson-container .xzperson-group{line-height: 24px;padding:0 10px;width: 280px}
+.vetech-xzperson-container .xzperson-group label{float: left;}
+.vetech-xzperson-container .group-right{display: inline-block;width: 218px;}
+.vetech-xzperson-container .xzperson-input{ display: inline-block;height: 26px; width: 102px;margin:0 0 8px 5px;position: relative; }
+.vetech-xzperson-container .xzperson-group .xzperson-input input{border-radius: 2px;padding: 0 5px;width:90px;line-height: 24px;height:24px; border:1px solid #ddd;background:#fff url("img/idown.png") no-repeat right center;}
+.vetech-xzperson-container .foot-btn{float: right;}
+.vetech-xzperson-container .xzperson-input .select-nav{position: absolute;top:26px;max-height: 160px;overflow-y: auto; left: 0;right:0;border:1px solid #ddd; box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);z-index: 9;background: #fff;border-bottom: 0}
+.vetech-xzperson-container .xzperson-input .select-nav li{width: auto;padding: 0 5px}

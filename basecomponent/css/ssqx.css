@@ -1,0 +1,123 @@
+.vetech-ssqx{
+	border: 1px solid #ccc;
+	position: absolute;
+	left: 10px;
+	top:10px;
+	z-index: 1000;
+	background: #fff;
+	font-size: 12px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: none;
+	/*bootstrap 样式冲突*/
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.vetech-ssqx .close{
+	position: absolute;
+	right:5px;
+	top:5px;
+	cursor: pointer;
+}
+.vetech-ssqx ul,.vetech-ssqx li{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+.vetech-ssqx li{
+	float: left;
+}
+.vetech-ssqx a{
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	color:#000000;
+}
+/*选项卡头部样式*/
+.vetech-ssqx .tab-header{
+	height:22px;
+	border-bottom: 2px solid #CCCCCC;
+	margin:10px 0 0 ;
+}
+
+.vetech-ssqx .tab-header li a{
+	height:22px;
+	line-height: 22px;
+	width:100%;
+	text-align: center;
+	outline: none;
+}
+.vetech-ssqx .tab-header li a.active{
+	color:#0099FF;
+	border-bottom:2px solid #0099FF;
+}
+
+/*内容区域样式*/
+.vetech-ssqx .tab-content{
+	display: none;
+	margin-top:10px;
+}
+.vetech-ssqx .tab-content.active{
+	display: block;
+}
+.vetech-ssqx .tab-content ul{
+	white-space: nowrap;
+	/*margin-bottom:10px;*/
+}
+
+.vetech-ssqx .tab-content dl,.vetech-ssqx .tab-content dt,.vetech-ssqx .tab-content dd{
+	margin:0;
+	padding:0;
+}
+.vetech-ssqx .tab-content dl{
+	/*border-bottom: 1px dashed orange;*/
+	margin-bottom:5px;
+}
+.vetech-ssqx .tab-content dt{
+	text-indent: 5px;
+	padding-top:5px;
+	width:40px;
+	float: left;
+	color:#E56700;
+	font-weight: bold;
+	text-align: center;
+}
+.vetech-ssqx .tab-content dd{
+	margin-left:50px;
+	display: block;
+}
+
+.vetech-ssqx .tab-content dd li{
+	padding:0 5px;
+	overflow: hidden;
+}
+
+.vetech-ssqx .tab-content li{
+	overflow: hidden;
+	margin:5px;
+	color:red;
+}
+
+.vetech-ssqx .tab-content a{
+    display: block;
+    width:100%;
+	height:22px;
+	line-height: 23px;
+    text-decoration: none;
+	outline: none;
+}
+/*鼠标移动的样式*/
+.vetech-ssqx .tab-content li:hover{
+	background: #09F;
+}
+.vetech-ssqx .tab-content li:hover a{
+	color:#fff;
+}
+
+/*多选的样式*/
+.vetech-ssqx .tab-content li.active{
+	background: #09F;
+}
+.vetech-ssqx .tab-content li.active a{
+	color:#fff;
+}

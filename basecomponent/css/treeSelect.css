@@ -1,0 +1,10 @@
+.vetech-treeSelect{
+    border: 1px solid #ccc;
+    position: absolute;
+    left: -1000px;
+    top: -1000px;
+    visibility: hidden;
+    background: #fff;
+    z-index: 10000;
+    overflow: auto;
+}
